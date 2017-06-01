@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Mushroom Mania</title>
+  </head>
+  <body ng-app="MushroomApp">
+    <h1>Mushroom Mania</h1>
+    <div ng-include="'partials/buttons.html'"></div>
+    <div ng-view>
+      <!-- this is where the content from the partials go -->
+    </div>
+
+    <script type="text/javascript" src="lib/node_modules/angular/angular.min.js"></script>
+    <script type="text/javascript" src="lib/node_modules/angular-route/angular-route.min.js"></script>
+    <!-- <script src="https://www.gstatic.com/firebasejs/3.6.6/firebase.js"></script>
+    <script src="https://cdn.firebase.com/libs/angularfire/2.3.0/angularfire.min.js"></script> -->
+    <script src="app/app.js"></script>
+    <script src="app/controllers/mushroomCtrl.js"></script>
+    <script src="app/factories/mushroomFactory.js"></script>
+  </body>
+</html>
